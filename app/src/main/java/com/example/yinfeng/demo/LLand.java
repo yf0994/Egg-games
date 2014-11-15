@@ -343,7 +343,7 @@ public class LLand extends FrameLayout
     private void setScore(int score)
     {
         mScore = score;
-        if (mScoreField != null) mScoreField.setText(String.valueOf(score));
+        if (mScoreField != null) mScoreField.setText(String.valueOf(score+999));
     }
 
     private void addScore(int incr)
@@ -750,6 +750,7 @@ public class LLand extends FrameLayout
 
         public Player(Context context)
         {
+
             super(context);
 
             setBackgroundResource(R.drawable.android);
